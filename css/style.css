@@ -1,0 +1,465 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+@font-face {
+    font-family: "covertops";
+    src: url(../fonts/covertops.ttf);
+}
+
+.FONDO {
+background-color: black;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+/* PSEUDOCLASE */
+
+a:active {
+    background-color: rgb(0, 0, 0);
+}
+/* NAV */
+nav {
+    background: linear-gradient(#777777, rgb(0, 0, 0));
+    height: 80px;
+    width: 100%;
+}
+.enlace {
+    position: absolute;
+    padding: 20px 50px;
+}
+.logo {
+    height: 135px;
+}
+nav ul {
+    float: right;
+    margin-right: 300px;
+    margin-top: 30px;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a {
+    font-family: "covertops";
+    font-size: 25px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+li a .active, li a:hover {
+    background: rgb(0, 0, 0);
+    transition: .5s;
+}
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    margin-left: 50px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
+/* CELULARES 320PX NAV*/
+@media (max-width: 320px) {
+.checkbtn {
+    display: block;
+}
+ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+}
+
+nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+
+nav ul li a {
+    font-size: 25px;
+}
+li a:hover, li a.active {
+    background: none;
+    color: rgb(255, 255, 255);    
+}
+#check:checked ~ ul {
+    left: 0;
+}
+.logo {
+    height: 70px;
+    padding-right: 100px;
+}
+}
+/* INDEX */
+.containerINDEX {
+    width: 100%;
+    height: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 5fr 5fr 6fr;
+    grid-template-areas: 
+    "nosotros nosotros "
+    "parrafo parrafo"
+    "fotos1  fotos2"
+    "fotos3  fotos4"
+    "vid1 vid1 "
+    ;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    border: solid rgb(0, 0, 0) 15px;
+    
+}
+.nosotrosINDEX {
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    align-items: end;
+    grid-area: nosotros;
+}
+.parrafoINDEX {
+    font-size: 25px;
+    text-align: center;
+    grid-area: parrafo;
+}
+.fotosINDEX1 {
+    grid-area: fotos1;
+    background-image: url(../assets/img/FOTOGYM1.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.fotosINDEX2 {
+    grid-area: fotos2;
+    background-image: url(../assets/img/FOTOGYM2.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.fotosINDEX3 {
+    grid-area: fotos3;
+    background-image: url(../assets/img/FOTOGYM3.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.fotosINDEX4 {
+    grid-area: fotos4;
+    background-image: url(../assets/img/FOTOGYM4.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.vidINDEX1 {
+    grid-area: vid1;
+    margin: 30px 60px;
+    text-align: center;
+}
+/* CELULARES 320PX INDEX */
+@media (max-width:320px) {
+    .containerINDEX {
+        width: 100%;
+        height: 1000px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 0.5fr 0.5fr 0.5fr 0.8fr;
+        grid-template-areas: 
+        "nosotros nosotros "
+        "parrafo parrafo"
+        "fotos1  fotos2"
+        "fotos3  fotos4"
+        "vid1 vid1 "
+        ;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        border: solid rgb(0, 0, 0) 15px;    
+    }
+    .nosotrosINDEX {
+        font-size: 20px;
+    }
+    .parrafoINDEX {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    iframe  {
+        height: 230px;
+        width: 150px;
+    }
+}  
+/* MMA */
+.containerMMA {
+    width: 100%;
+    height: 1600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 0.3fr 0.5fr 1fr 0.5fr 0.5fr 1fr ;
+    grid-template-areas: 
+    "INTROMMA INTROMMA"
+    "PARRAFOMMA PARRAFOMMA"
+    "BOXEO BOXEO"
+    "VIDEOBOXEO VIDEOBOXEO"
+    "KICK  KICK "
+    "VIDEOKICK  VIDEOKICK"
+    "JIU JIU"
+    "VIDEOJIU  VIDEOJIU"
+    ;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    border: solid rgb(0, 0, 0) 15px;
+}
+.INTROMMA {
+    grid-area: INTROMMA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px; 
+}
+.PARRAFOMMA {
+    grid-area: PARRAFOMMA;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-size: 25px;
+    text-align: center;    
+}
+.BOXEO {
+    grid-area: BOXEO;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.VIDEOBOXEO {
+    grid-area: VIDEOBOXEO;
+    text-align: center;
+}
+.KICK {
+    grid-area: KICK;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.VIDEOKICK {
+    grid-area: VIDEOKICK;
+    text-align: center;
+}
+.JIU {
+    grid-area: JIU;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.VIDEOJIU {
+    grid-area: VIDEOJIU;
+    text-align: center;
+}
+/* CELULARES 320PX MMA*/
+@media (max-width: 320px) {
+    .containerMMA {
+        width: 300px;
+        height: 1200px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.3fr 0.3fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr;
+        grid-template-areas: 
+        "INTROMMA INTROMMA"
+        "PARRAFOMMA PARRAFOMMA"
+        "BOXEO BOXEO"
+        "VIDEOBOXEO VIDEOBOXEO"
+        "KICK  KICK"
+        "VIDEOKICK VIDEOKICK"
+        "JIU JIU"
+        "VIDEOJIU VIDEOJIU"
+        ;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        border: solid rgb(0, 0, 0) 15px;
+    }   
+    .INTROMMA {
+        font-size: 20px ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .PARRAFOMMA {
+        font-size: 15px;
+    }
+
+    .BOXEO {
+        font-size: 15px;
+    }
+
+    .KICK {
+        font-size: 15px;
+    }
+
+    .JIU {
+        font-size: 15px;
+    }
+
+}
+/* FUNCIONAL */
+.containerFUNCIONAL {
+    width: 100%;
+    height: 1400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.6fr 1fr;
+    grid-template-areas: 
+    "introFUNCIONAL introFUNCIONAL"
+    "parrafoFUNCIONAL1 parrafoFUNCIONAL1"
+    "parrafoFUNCIONAL2 parrafoFUNCIONAL2"
+    "fotoFUNCIONAL1 fotoFUNCIONAL2 "
+    "videoFUNCIONAL1 videoFUNCIONAL1"
+    ;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    border: solid rgb(0, 0, 0) 15px;
+}
+
+.introFUNCIONAL {
+    grid-area: introFUNCIONAL;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.parrafoFUNCIONAL1 {
+    grid-area: parrafoFUNCIONAL1;
+    font-size: 25px;
+    text-align: center;
+} 
+
+.parrafoFUNCIONAL2 {
+    grid-area: parrafoFUNCIONAL2;
+    font-size: 25px;
+    text-align: center;
+    background-position: center center;
+} 
+
+.fotoFUNCIONAL1 {
+    grid-area: fotoFUNCIONAL1;
+    background-image: url(../assets/img/FOTOFUNCIONAL1.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.fotoFUNCIONAL2 {
+    grid-area: fotoFUNCIONAL2;
+    background-image: url(../assets/img/FOTOFUNCIONAL2.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.videoFUNCIONAL1 {
+    grid-area: videoFUNCIONAL1;
+    margin: 30px 60px;
+    text-align: center;
+}
+
+/* CELULARES 320PX FUNCIONAL*/
+
+@media (max-width: 320px){
+    .containerFUNCIONAL {
+        width: 100%;
+        height: 700px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.3fr 0.1fr 0.1fr 1fr 0.5fr;
+        grid-template-areas: 
+        "introFUNCIONAL introFUNCIONAL"
+        "parrafoFUNCIONAL1 parrafoFUNCIONAL1"
+        "parrafoFUNCIONAL2 parrafoFUNCIONAL2"
+        "fotoFUNCIONAL1 fotoFUNCIONAL2 "
+        "videoFUNCIONAL1 videoFUNCIONAL1"
+        ;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        border: solid rgb(0, 0, 0) 15px;
+    }
+
+    .introFUNCIONAL {
+        grid-area: introFUNCIONAL;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    .parrafoFUNCIONAL1 {
+        grid-area: parrafoFUNCIONAL1;
+        font-size: 15px;
+        text-align: center;
+    } 
+
+    .parrafoFUNCIONAL2 {
+        grid-area: parrafoFUNCIONAL2;
+        font-size: 15px;
+        text-align: center;
+    } 
+
+    .fotoFUNCIONAL1 {
+        margin-top: 10px;
+    }
+
+    .fotoFUNCIONAL2 {
+        margin-top: 10px;
+    }
+
+/* EVENTOS */
+
+
+}
+
+/* FOOTER */
+
+.footer {
+    background: linear-gradient(#0000, #777777);
+    font-size: 25px;
+    font-family: "covertops";
+    height: 150px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "footer"
+    "redes" ;
+    align-items: end;
+    justify-items: center;
+    padding: 20px;
+   
+}
+
+.redes {
+    grid-area: redes;
+}
+
+@media (max-width: 320px) {
+    .footer {
+        font-size: 20px;
+    }
+}
+   
+
+
+
+
+
