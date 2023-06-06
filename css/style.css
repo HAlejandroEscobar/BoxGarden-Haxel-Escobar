@@ -1,12 +1,17 @@
+@font-face {
+    font-family: "covertops";
+    src: url(../fonts/covertops.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: white;
 }
-@font-face {
-    font-family: "covertops";
-    src: url(../fonts/covertops.ttf);
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 .FONDO {
@@ -17,6 +22,7 @@ a {
     color: white;
     text-decoration: none;
 }
+
 /* PSEUDOCLASE */
 
 a:active {
@@ -423,8 +429,6 @@ li a:hover, li a.active {
     .fotoFUNCIONAL2 {
         margin-top: 10px;
     }
-
-/* EVENTOS */
 
 
 }
