@@ -75,42 +75,11 @@ li a .active, li a:hover {
 #check {
     display: none;
 }
+
 /* CELULARES 320PX NAV*/
+
 @media (max-width: 320px) {
-.checkbtn {
-    display: block;
-}
-ul {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: rgb(0, 0, 0);
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
-}
 
-nav ul li {
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-}
-
-nav ul li a {
-    font-size: 25px;
-}
-li a:hover, li a.active {
-    background: none;
-    color: rgb(255, 255, 255);    
-}
-#check:checked ~ ul {
-    left: 0;
-}
-.logo {
-    height: 70px;
-    padding-right: 100px;
-}
 }
 /* INDEX */
 .containerINDEX {
@@ -176,37 +145,7 @@ li a:hover, li a.active {
     margin: 30px 60px;
     text-align: center;
 }
-/* CELULARES 320PX INDEX */
-@media (max-width:320px) {
-    .containerINDEX {
-        width: 100%;
-        height: 1000px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.2fr 0.5fr 0.5fr 0.5fr 0.8fr;
-        grid-template-areas: 
-        "nosotros nosotros "
-        "parrafo parrafo"
-        "fotos1  fotos2"
-        "fotos3  fotos4"
-        "vid1 vid1 "
-        ;
-        grid-column-gap: 5px;
-        grid-row-gap: 5px;
-        border: solid rgb(0, 0, 0) 15px;    
-    }
-    .nosotrosINDEX {
-        font-size: 20px;
-    }
-    .parrafoINDEX {
-        font-size: 15px;
-        margin-bottom: 10px;
-    }
-    iframe  {
-        height: 230px;
-        width: 150px;
-    }
-}  
+
 /* MMA */
 .containerMMA {
     width: 100%;
@@ -248,6 +187,7 @@ li a:hover, li a.active {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 25px;
 }
 .VIDEOBOXEO {
     grid-area: VIDEOBOXEO;
@@ -258,6 +198,7 @@ li a:hover, li a.active {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 25px;
 }
 .VIDEOKICK {
     grid-area: VIDEOKICK;
@@ -268,61 +209,18 @@ li a:hover, li a.active {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 25px;
 }
 .VIDEOJIU {
     grid-area: VIDEOJIU;
     text-align: center;
 }
-/* CELULARES 320PX MMA*/
-@media (max-width: 320px) {
-    .containerMMA {
-        width: 300px;
-        height: 1200px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.3fr 0.3fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr;
-        grid-template-areas: 
-        "INTROMMA INTROMMA"
-        "PARRAFOMMA PARRAFOMMA"
-        "BOXEO BOXEO"
-        "VIDEOBOXEO VIDEOBOXEO"
-        "KICK  KICK"
-        "VIDEOKICK VIDEOKICK"
-        "JIU JIU"
-        "VIDEOJIU VIDEOJIU"
-        ;
-        grid-column-gap: 5px;
-        grid-row-gap: 5px;
-        border: solid rgb(0, 0, 0) 15px;
-    }   
-    .INTROMMA {
-        font-size: 20px ;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 
-    .PARRAFOMMA {
-        font-size: 15px;
-    }
-
-    .BOXEO {
-        font-size: 15px;
-    }
-
-    .KICK {
-        font-size: 15px;
-    }
-
-    .JIU {
-        font-size: 15px;
-    }
-
-}
 /* FUNCIONAL */
+
 .containerFUNCIONAL {
     width: 100%;
-    height: 1400px;
+    height: 1000px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.1fr 0.1fr 0.1fr 0.6fr 1fr;
@@ -381,12 +279,114 @@ li a:hover, li a.active {
     text-align: center;
 }
 
-/* CELULARES 320PX FUNCIONAL*/
 
-@media (max-width: 320px){
+/* FOOTER */
+
+.footer {
+    background: linear-gradient(#0000, #777777);
+    font-size: 25px;
+    font-family: "covertops";
+    height: 150px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "footer"
+    "redes" ;
+    align-items: end;
+    justify-items: center;
+    padding: 20px;
+   
+}
+
+.redes {
+    grid-area: redes;
+}
+
+/* MEDIA QUERIES FULL */
+
+/* MMA */
+
+@media (max-width: 320px) {
+    .containerMMA {
+        width: 300px;
+        height: 1200px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.3fr 0.3fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr;
+        grid-template-areas: 
+        "INTROMMA INTROMMA"
+        "PARRAFOMMA PARRAFOMMA"
+        "BOXEO BOXEO"
+        "VIDEOBOXEO VIDEOBOXEO"
+        "KICK  KICK"
+        "VIDEOKICK VIDEOKICK"
+        "JIU JIU"
+        "VIDEOJIU VIDEOJIU"
+        ;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        border: solid rgb(0, 0, 0) 15px;
+    }   
+    .INTROMMA {
+        font-size: 20px ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .PARRAFOMMA {
+        font-size: 15px;
+    }
+
+    .BOXEO {
+        font-size: 16px;
+    }
+
+    .KICK {
+        font-size: 16px;
+    }
+
+    .JIU {
+        font-size: 16px;
+    }
+
+    /* INDEX */
+
+    .containerINDEX {
+        width: 100%;
+        height: 1000px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 0.5fr 0.5fr 0.5fr 0.8fr;
+        grid-template-areas: 
+        "nosotros nosotros "
+        "parrafo parrafo"
+        "fotos1  fotos2"
+        "fotos3  fotos4"
+        "vid1 vid1 "
+        ;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        border: solid rgb(0, 0, 0) 15px;    
+    }
+    .nosotrosINDEX {
+        font-size: 20px;
+    }
+    .parrafoINDEX {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    iframe  {
+        height: 230px;
+        width: 150px;
+    }
+
+    /* FUNCIONAL */
+
     .containerFUNCIONAL {
         width: 100%;
-        height: 700px;
+        height: 800px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.3fr 0.1fr 0.1fr 1fr 0.5fr;
@@ -430,35 +430,47 @@ li a:hover, li a.active {
         margin-top: 10px;
     }
 
+    /* FOOTER */
 
-}
-
-/* FOOTER */
-
-.footer {
-    background: linear-gradient(#0000, #777777);
-    font-size: 25px;
-    font-family: "covertops";
-    height: 150px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-    "footer"
-    "redes" ;
-    align-items: end;
-    justify-items: center;
-    padding: 20px;
-   
-}
-
-.redes {
-    grid-area: redes;
-}
-
-@media (max-width: 320px) {
     .footer {
         font-size: 20px;
+    }
+
+    /* NAV */
+
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(0, 0, 0);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    
+    nav ul li a {
+        font-size: 25px;
+    }
+    li a:hover, li a.active {
+        background: none;
+        color: rgb(255, 255, 255);    
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+    .logo {
+        height: 70px;
+        padding-right: 100px;
     }
 }
    
