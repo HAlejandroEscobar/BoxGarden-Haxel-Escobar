@@ -1,0 +1,146 @@
+@media (max-width: 320px) {
+    .containerMMA {
+        @include size (300px, 1200px);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.3fr 0.3fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr;
+        grid-template-areas: 
+        "INTROMMA INTROMMA"
+        "PARRAFOMMA PARRAFOMMA"
+        "BOXEO BOXEO"
+        "VIDEOBOXEO VIDEOBOXEO"
+        "KICK  KICK"
+        "VIDEOKICK VIDEOKICK"
+        "JIU JIU"
+        "VIDEOJIU VIDEOJIU"
+        ;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        border: solid rgb(0, 0, 0) 15px;
+    }   
+    .INTROMMA {
+        @include flexcenter (flex, center, center, 20px);
+    }
+
+    .PARRAFOMMA {
+        font-size: 15px;
+    }
+
+    .BOXEO {
+        font-size: 16px;
+    }
+
+    .KICK {
+        font-size: 16px;
+    }
+
+    .JIU {
+        font-size: 16px;
+    }
+
+    .containerINDEX {
+        @include size (100%, 1000px);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 0.5fr 0.5fr 0.5fr 0.8fr;
+        grid-template-areas: 
+        "nosotros nosotros "
+        "parrafo parrafo"
+        "fotos1  fotos2"
+        "fotos3  fotos4"
+        "vid1 vid1 "
+        ;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        border: solid rgb(0, 0, 0) 15px;    
+    }
+    .nosotrosINDEX {
+        font-size: 20px;
+    }
+    .parrafoINDEX {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    iframe  {
+        @include size (150px, 230px);
+    }
+
+    .containerFUNCIONAL {
+        @include size (100%, 800px);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.3fr 0.1fr 0.1fr 1fr 0.5fr;
+        grid-template-areas: 
+        "introFUNCIONAL introFUNCIONAL"
+        "parrafoFUNCIONAL1 parrafoFUNCIONAL1"
+        "parrafoFUNCIONAL2 parrafoFUNCIONAL2"
+        "fotoFUNCIONAL1 fotoFUNCIONAL2 "
+        "videoFUNCIONAL1 videoFUNCIONAL1"
+        ;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        border: solid rgb(0, 0, 0) 15px;
+    }
+
+    .introFUNCIONAL {
+        grid-area: introFUNCIONAL;
+        @include flexcenter (flex, center, center, 20px);
+    }
+
+    .parrafoFUNCIONAL1 {
+        grid-area: parrafoFUNCIONAL1;
+        @include fontcenter (15px, center);
+    } 
+
+    .parrafoFUNCIONAL2 {
+        grid-area: parrafoFUNCIONAL2;
+        @include fontcenter (15px, center);
+    } 
+
+    .fotoFUNCIONAL1 {
+        margin-top: 10px;
+    }
+
+    .fotoFUNCIONAL2 {
+        margin-top: 10px;
+    }
+
+    .footer {
+        font-size: 20px;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        @include size (100%, 100vh);
+        background: rgb(0, 0, 0);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    
+    nav ul li a {
+        font-size: 25px;
+    }
+    li a:hover, li a.active {
+        background: none;
+        color: rgb(255, 255, 255);    
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+    .logo {
+        height: 70px;
+        padding-right: 100px;
+    }
+}
+   

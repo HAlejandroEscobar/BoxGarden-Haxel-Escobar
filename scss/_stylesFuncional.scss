@@ -1,0 +1,54 @@
+.containerFUNCIONAL {
+    @include size (100%, 1000px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.6fr 1fr;
+    grid-template-areas: 
+    "introFUNCIONAL introFUNCIONAL"
+    "parrafoFUNCIONAL1 parrafoFUNCIONAL1"
+    "parrafoFUNCIONAL2 parrafoFUNCIONAL2"
+    "fotoFUNCIONAL1 fotoFUNCIONAL2 "
+    "videoFUNCIONAL1 videoFUNCIONAL1"
+    ;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    border: solid $negro 15px;
+}
+
+.introFUNCIONAL {
+    grid-area: introFUNCIONAL;
+    @include flexcenter (flex, center, center, 30px)
+}
+
+.parrafoFUNCIONAL1 {
+    grid-area: parrafoFUNCIONAL1;
+    @include fontcenter (25px, center);
+} 
+
+.parrafoFUNCIONAL2 {
+    grid-area: parrafoFUNCIONAL2;
+    @include fontcenter (25px, center);
+} 
+
+.fotoFUNCIONAL1 {
+    grid-area: fotoFUNCIONAL1;
+    background-image: url(../assets/img/FOTOFUNCIONAL1.jpeg);
+    animation: fade 2s ease-in-out forwards;
+    @include centrafotos (no-repeat, contain, center center)
+    
+}
+
+.fotoFUNCIONAL2 {
+    grid-area: fotoFUNCIONAL2;
+    background-image: url(../assets/img/FOTOFUNCIONAL2.jpeg);
+    animation: fade 2s ease-in-out forwards;
+    @include centrafotos (no-repeat, contain, center center)
+}
+
+.videoFUNCIONAL1 {
+    grid-area: videoFUNCIONAL1;
+    margin: 30px 60px;
+    text-align: center;
+    animation: fade 2s ease-in-out forwards;
+}
+

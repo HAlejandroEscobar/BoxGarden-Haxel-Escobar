@@ -1,0 +1,29 @@
+@mixin size ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin marginpadding ($margin, $padding){
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin centrafotos ($repeat, $contain, $center ) {
+    background-repeat: $repeat;
+    background-size: $contain;
+    background-position: $center;
+}
+
+@mixin flexcenter ($display, $align, $content, $size){
+    display: $display;
+    text-align: $align;
+    justify-content: $content;
+    font-size: $size; 
+}
+
+@mixin fontcenter ($font, $align) {
+    font-size: $font;
+    text-align: $align;
+}
+
+ // background-position: $center;

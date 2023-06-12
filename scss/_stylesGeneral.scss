@@ -1,0 +1,30 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.FONDO {
+background-color: $negro;
+}
+
+a {
+    color: $white;
+    text-decoration: none;
+}
+
+a:active {
+    background-color: $negro;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

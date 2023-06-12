@@ -1,0 +1,21 @@
+.footer {
+    background: $negrogris;
+    font-size: 25px;
+    font-family: "covertops";
+    height: 150px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "footer"
+    "redes" ;
+    align-items: end;
+    justify-items: center;
+    padding: 20px;
+   
+}
+
+.redes {
+    grid-area: redes;
+}
+

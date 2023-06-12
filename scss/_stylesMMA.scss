@@ -1,0 +1,56 @@
+.containerMMA {
+    @include size (100%, 1600px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 0.3fr 0.5fr 1fr 0.5fr 0.5fr 1fr ;
+    grid-template-areas: 
+    "INTROMMA INTROMMA"
+    "PARRAFOMMA PARRAFOMMA"
+    "BOXEO BOXEO"
+    "VIDEOBOXEO VIDEOBOXEO"
+    "KICK  KICK "
+    "VIDEOKICK  VIDEOKICK"
+    "JIU JIU"
+    "VIDEOJIU  VIDEOJIU"
+    ;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    border: solid $negro 15px;
+}
+.INTROMMA {
+    grid-area: INTROMMA;
+    @include flexcenter (flex, center, center, 30px)
+}
+.PARRAFOMMA {
+    grid-area: PARRAFOMMA;
+    @include flexcenter (flex, center, center, 25px);
+    align-items: start;
+      
+}
+.BOXEO {
+    grid-area: BOXEO;
+    @include flexcenter (flex, center, center, 25px);
+}
+.VIDEOBOXEO {
+    grid-area: VIDEOBOXEO;
+    text-align: center;
+    animation: fade 2s ease-in-out forwards;
+}
+.KICK {
+    grid-area: KICK;
+    @include flexcenter (flex, center, center, 25px);
+}
+.VIDEOKICK {
+    grid-area: VIDEOKICK;
+    text-align: center;
+    animation: fade 2s ease-in-out forwards;
+}
+.JIU {
+    grid-area: JIU;
+    @include flexcenter (flex, center, center, 25px);
+}
+.VIDEOJIU {
+    grid-area: VIDEOJIU;
+    text-align: center;
+    animation: fade 2s ease-in-out forwards;
+}

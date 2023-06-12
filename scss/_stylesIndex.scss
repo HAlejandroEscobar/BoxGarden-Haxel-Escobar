@@ -1,0 +1,59 @@
+.containerINDEX {
+    @include size (100%, 1200px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 5fr 5fr 6fr;
+    grid-template-areas: 
+    "nosotros nosotros "
+    "parrafo parrafo"
+    "fotos1  fotos2"
+    "fotos3  fotos4"
+    "vid1 vid1 "
+    ;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    border: solid $negro 15px;
+    
+}
+.nosotrosINDEX {
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    align-items: end;
+    grid-area: nosotros;
+}
+.parrafoINDEX {
+    font-size: 25px;
+    text-align: center;
+    grid-area: parrafo;
+}
+.fotosINDEX1 {
+    grid-area: fotos1;
+    background-image: url(../assets/img/FOTOGYM1.jpeg);
+    animation: fade 2s ease-in-out forwards;
+    @include centrafotos (no-repeat, contain, center center)
+}
+.fotosINDEX2 {
+    grid-area: fotos2;
+    background-image: url(../assets/img/FOTOGYM2.jpeg);
+    animation: fade 2s ease-in-out forwards;
+    @include centrafotos (no-repeat, contain, center center)
+}
+.fotosINDEX3 {
+    grid-area: fotos3;
+    background-image: url(../assets/img/FOTOGYM3.jpeg);
+    animation: fade 2s ease-in-out forwards;
+    @include centrafotos (no-repeat, contain, center center)
+}
+.fotosINDEX4 {
+    grid-area: fotos4;
+    background-image: url(../assets/img/FOTOGYM4.jpeg);
+    animation: fade 2s ease-in-out forwards;
+    @include centrafotos (no-repeat, contain, center center)
+}
+.vidINDEX1 {
+    grid-area: vid1;
+    margin: 30px 60px;
+    text-align: center;
+    animation: fade 2s ease-in-out forwards;
+}
