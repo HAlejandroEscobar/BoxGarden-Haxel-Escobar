@@ -109,9 +109,6 @@
         font-size: 20px;
     }
 
-    .checkbtn {
-        display: block;
-    }
     ul {
         position: fixed;
         @include size (100%, 100vh);
@@ -141,6 +138,10 @@
     .logo {
         height: 70px;
         padding-right: 100px;
+    }
+
+    .checkbtn {
+        display: block;
     }
 }
    

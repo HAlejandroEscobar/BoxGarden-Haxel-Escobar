@@ -9,11 +9,12 @@ background-color: $negro;
 a {
     color: $white;
     text-decoration: none;
+
+    &:active {
+        background-color: $negro;
+    }
 }
 
-a:active {
-    background-color: $negro;
-}
 
 @keyframes fade {
     0% {
