@@ -66,6 +66,7 @@ nav ul li a {
 
 .logo {
   height: 135px;
+  animation: fade 2s ease-in-out forwards;
 }
 
 li a .active, li a:hover {
@@ -401,6 +402,7 @@ li a .active, li a:hover {
     left: -100%;
     text-align: center;
     transition: all 0.5s;
+    z-index: 1;
   }
   nav ul li {
     display: block;
