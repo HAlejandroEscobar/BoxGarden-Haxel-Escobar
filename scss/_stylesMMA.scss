@@ -2,7 +2,7 @@
     @include size (100%, 1600px);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.2fr 0.3fr 0.5fr 1fr 0.5fr 0.5fr 1fr ;
+    grid-template-rows: 0.2fr 0.3fr 0.5fr 1fr 0.5fr 0.4fr 1fr ;
     grid-template-areas: 
     "INTROMMA INTROMMA"
     "PARRAFOMMA PARRAFOMMA"
@@ -25,11 +25,13 @@
     grid-area: PARRAFOMMA;
     @include flexcenter (flex, center, center, 25px);
     align-items: start;
+    padding: 0 20% 0;
       
 }
 .BOXEO {
     grid-area: BOXEO;
     @include flexcenter (flex, center, center, 25px);
+    align-items: center;
 }
 .VIDEOBOXEO {
     grid-area: VIDEOBOXEO;
@@ -39,6 +41,7 @@
 .KICK {
     grid-area: KICK;
     @include flexcenter (flex, center, center, 25px);
+    align-items: center;
 }
 .VIDEOKICK {
     grid-area: VIDEOKICK;
@@ -48,6 +51,7 @@
 .JIU {
     grid-area: JIU;
     @include flexcenter (flex, center, center, 25px);
+    align-items: center;
 }
 .VIDEOJIU {
     grid-area: VIDEOJIU;

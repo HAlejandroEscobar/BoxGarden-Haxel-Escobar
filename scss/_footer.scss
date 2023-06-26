@@ -5,11 +5,11 @@
     height: 150px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 2fr 3fr;
     grid-template-areas:
     "footer"
     "redes" ;
-    align-items: end;
+    align-items: center;
     justify-items: center;
     padding: 20px;
    

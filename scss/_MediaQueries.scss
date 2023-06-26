@@ -17,6 +17,7 @@
         grid-column-gap: 5px;
         grid-row-gap: 5px;
         border: solid rgb(0, 0, 0) 15px;
+        align-items: center
     }   
     .INTROMMA {
         @include flexcenter (flex, center, center, 20px);
@@ -85,6 +86,7 @@
     .introFUNCIONAL {
         grid-area: introFUNCIONAL;
         @include flexcenter (flex, center, center, 20px);
+        align-items: end;
     }
 
     .parrafoFUNCIONAL1 {
@@ -98,11 +100,17 @@
     } 
 
     .fotoFUNCIONAL1 {
-        margin-top: 10px;
+        grid-area: fotoFUNCIONAL1;
+        
     }
 
     .fotoFUNCIONAL2 {
-        margin-top: 10px;
+        grid-area: fotoFUNCIONAL2;
+       
+    }
+
+    .videoFUNCIONAL1 {
+        grid-area: videoFUNCIONAL1;
     }
 
     .footer {

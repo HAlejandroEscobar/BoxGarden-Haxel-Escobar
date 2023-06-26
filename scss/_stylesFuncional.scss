@@ -2,7 +2,7 @@
     @include size (100%, 1000px);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.6fr 1fr;
+    grid-template-rows: 0.5fr 0.8fr 0.8fr 3fr 1.5fr;
     grid-template-areas: 
     "introFUNCIONAL introFUNCIONAL"
     "parrafoFUNCIONAL1 parrafoFUNCIONAL1"
@@ -17,17 +17,20 @@
 
 .introFUNCIONAL {
     grid-area: introFUNCIONAL;
-    @include flexcenter (flex, center, center, 30px)
+    @include flexcenter (flex, center, center, 30px);
+    align-items: center;
 }
 
 .parrafoFUNCIONAL1 {
     grid-area: parrafoFUNCIONAL1;
     @include fontcenter (25px, center);
+    padding: 0 20% 0;
 } 
 
 .parrafoFUNCIONAL2 {
     grid-area: parrafoFUNCIONAL2;
     @include fontcenter (25px, center);
+    padding: 0 20% 0;
 } 
 
 .fotoFUNCIONAL1 {
@@ -47,8 +50,8 @@
 
 .videoFUNCIONAL1 {
     grid-area: videoFUNCIONAL1;
-    margin: 30px 60px;
     text-align: center;
     animation: fade 2s ease-in-out forwards;
+    margin-top: 20px;
 }
 

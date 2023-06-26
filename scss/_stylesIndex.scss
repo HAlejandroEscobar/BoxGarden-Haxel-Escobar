@@ -2,7 +2,7 @@
     @include size (100%, 1200px);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 5fr 5fr 6fr;
+    grid-template-rows: 2fr 5fr 8fr 8fr 6fr;
     grid-template-areas: 
     "nosotros nosotros "
     "parrafo parrafo"
@@ -19,13 +19,14 @@
     display: flex;
     font-size: 30px;
     justify-content: center;
-    align-items: end;
+    align-items: center;
     grid-area: nosotros;
 }
 .parrafoINDEX {
     font-size: 25px;
     text-align: center;
     grid-area: parrafo;
+    padding: 0 20% 0;
 }
 .fotosINDEX1 {
     grid-area: fotos1;
